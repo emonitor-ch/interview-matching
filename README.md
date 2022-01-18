@@ -82,10 +82,7 @@ Applicant preferences:
 ## Task
 
 
-NOTE: Design an algorithm in a way that an applicant proposes and apartment accepts or rejects.
-
-
-0. Design an algorithm which finds a set of near-perfect matches.
+0. Design an algorithm which finds a set of near-perfect matches (NOTE: Design an algorithm in a way that an applicant proposes and apartment accepts or rejects.).
 
 1. Design a parametrized test for example 1., 2. and/or additional cases.
 
