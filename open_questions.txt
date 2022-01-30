@@ -1,0 +1,31 @@
+Does the solution run in reasonable time? How fast and why?
+	Yes the run time of the solution is reasonable, athough there is still room for further optimization.
+	
+	unit test 1 - 0.000899 seconds
+	unit test 2 - 0.002621 seconds
+	unit test 3 - 0.010381 seconds this one is slowest because it contains edge cases that take a while to terminate
+	
+How would you deploy this application to production? Explain the design.
+	Depending on the expected amount of data/user input.
+	Some refactoring may be required to make the solution more scalable.
+	
+	For this challange I went for an iterative design in order to meet the deadline. (Otherwise I might have gone for a more elegant solution, something recursive perhaps)
+	The apartments always accept the most preffered applicant that hasn't been matched.
+	The algorithm itterates trough every applicant and sends a proposal to their most preffered apartment (starting with only 1 proposal per applicant to the most preffered apartment).
+	If an itteration has no matches, proposals sent per applicant is increased by 1 until a match occurs.
+	
+Which design pattern could we apply in our design if we would need to extend our algorithm?
+	I would go with the Strategy design pattern. 
+	This allows us to implement more than one algorithm that can be selected at runtime.
+	I have a feeling that this can be solved with multiple different algorithm.
+	This desing pattern allows me to implement new solutions without compromising exsisting code.
+
+What do we need to adapt in our code to implement it?
+
+	In order to use the solution first a Matcher object needs to be created.
+	Apartment and applicants are inputed with input_applicant() and input_apartment() functions.
+	They take one parameter, an integer list with the first element being the id. Example. [1, 4, 5, 3, 7, 2, 6, 1]
+
+	After all applicants and apartments are inputed call match()
+	match() returns a 2 dimensional array of matched results.
+	It is also possible to call print_result() in order to get requested output format as on the github repository.
