@@ -20,7 +20,7 @@ def compute_pairs(m1, m2):
                     # If there is a match in edges (a pair), but that pair
                     # is already taken previously (it exists in matches),
                     # we must remove it from the edges and skip it.
-                    if match % 10 == pair % 10 or abs(match - pair) < size:
+                    if match % 10 == pair % 10 or match // 10 == pair // 10:
                         edges = list(filter((pair).__ne__, edges))
                         break
                 else:

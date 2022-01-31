@@ -63,4 +63,4 @@ class ExamplesTest(unittest.TestCase):
         results = compute_pairs(m1, m2)
 
         # Note: Different from README.md
-        self.assertListEqual(results, [14, 23, 31, 46, 57, 65, 72])
+        self.assertListEqual(results, [13, 22, 36, 41, 57, 64, 75])
