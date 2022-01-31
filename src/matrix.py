@@ -75,7 +75,7 @@ class Matrix:
 
     def increase(self, increase_step=False, increase_value_by=1):
         """Increase elements by defined parameters.
-        
+
         `increase step` will increase all row elements by who they belong to.
         `increase_value_by` will increase all elements of matrix by provided
         value.

@@ -2,6 +2,6 @@ run-tests:
 	python -m unittest discover tests
 
 lint:
-	black */**.py
+	black src/**.py
 	isort src
-	flake8 */**.py
+	flake8 src/**.py
